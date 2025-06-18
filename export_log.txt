@@ -1,0 +1,26 @@
+Running Garmin export script... 
+C:\Users\skriv\Desktop\Garmin-demo\.venv\Scripts\python.exe: can't open file 'C:\\Users\\skriv\\Desktop\\Garmin-deom\\garmindemo.py': [Errno 2] No such file or directory
+Running Garmin export script... 
+Traceback (most recent call last):
+  File "C:\Users\skriv\Desktop\Garmin-demo\garmindemo.py", line 27, in <module>
+    logging.basicConfig(
+    ~~~~~~~~~~~~~~~~~~~^
+        filename=LOG_FILE,
+        ^^^^^^^^^^^^^^^^^^
+        level=logging.INFO,
+        ^^^^^^^^^^^^^^^^^^^
+        format="%(asctime)s - %(levelname)s - %(message)s"
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\skriv\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 2099, in basicConfig
+    h = FileHandler(filename, mode,
+                    encoding=encoding, errors=errors)
+  File "C:\Users\skriv\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1218, in __init__
+    StreamHandler.__init__(self, self._open())
+                                 ~~~~~~~~~~^^
+  File "C:\Users\skriv\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1247, in _open
+    return open_func(self.baseFilename, self.mode,
+                     encoding=self.encoding, errors=self.errors)
+PermissionError: [Errno 13] Permission denied: 'C:\\Windows\\System32\\garmin_export.log'
+Done. 

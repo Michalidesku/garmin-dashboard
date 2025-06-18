@@ -1,0 +1,637 @@
+Running Garmin export script...
+Traceback (most recent call last):
+  File "C:\Users\skriv\Desktop\Garmin-demo\garmindemo.py", line 134, in <module>
+    print(f"\n\U0001f4e5 Running Garmin export at {datetime.datetime.now()}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skriv\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4e5' in position 2: character maps to <undefined>
+Done. 
+Running Garmin export script...
+
+Running Garmin export at 2025-06-18 12:08:46.104659
+Traceback (most recent call last):
+  File "C:\Users\skriv\Desktop\Garmin-demo\garmindemo.py", line 138, in <module>
+    df = pd.read_csv("garmin_activities.csv")
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\pandas\io\parsers\readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\pandas\io\parsers\readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'garmin_activities.csv'
+Done. 
+Running Garmin export script...
+Traceback (most recent call last):
+  File "C:\Users\skriv\Desktop\Garmin-demo\garmindemo.py", line 43, in <module>
+    print("\u274c No data file found. Export might have failed or there are no activities yet.")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skriv\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u274c' in position 0: character maps to <undefined>
+Done. 
+Running Garmin export script...
+ No data file found. Export might have failed or there are no activities yet.
+Done. 
+Running Garmin export script...
+Traceback (most recent call last):
+  File "C:\Users\skriv\Desktop\Garmin-demo\garmindemo.py", line 28, in <module>
+    logging.basicConfig(
+    ~~~~~~~~~~~~~~~~~~~^
+        filename=LOG_FILE,
+        ^^^^^^^^^^^^^^^^^^
+        level=logging.INFO,
+        ^^^^^^^^^^^^^^^^^^^
+        format="%(asctime)s - %(levelname)s - %(message)s"
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\skriv\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 2099, in basicConfig
+    h = FileHandler(filename, mode,
+                    encoding=encoding, errors=errors)
+  File "C:\Users\skriv\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1218, in __init__
+    StreamHandler.__init__(self, self._open())
+                                 ~~~~~~~~~~^^
+  File "C:\Users\skriv\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1247, in _open
+    return open_func(self.baseFilename, self.mode,
+                     encoding=self.encoding, errors=self.errors)
+PermissionError: [Errno 13] Permission denied: 'C:\\Windows\\System32\\garmin_export.log'
+Done. 
+Running Garmin export script...
+C:\Users\skriv\Desktop\Garmin-demo\garmindemo.py:135: SyntaxWarning: invalid escape sequence '\R'
+  print(f"\Running Garmin export at {datetime.datetime.now()}")
+Traceback (most recent call last):
+  File "C:\Users\skriv\Desktop\Garmin-demo\garmindemo.py", line 28, in <module>
+    logging.basicConfig(
+    ~~~~~~~~~~~~~~~~~~~^
+        filename=LOG_FILE,
+        ^^^^^^^^^^^^^^^^^^
+        level=logging.INFO,
+        ^^^^^^^^^^^^^^^^^^^
+        format="%(asctime)s - %(levelname)s - %(message)s"
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\skriv\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 2099, in basicConfig
+    h = FileHandler(filename, mode,
+                    encoding=encoding, errors=errors)
+  File "C:\Users\skriv\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1218, in __init__
+    StreamHandler.__init__(self, self._open())
+                                 ~~~~~~~~~~^^
+  File "C:\Users\skriv\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1247, in _open
+    return open_func(self.baseFilename, self.mode,
+                     encoding=self.encoding, errors=self.errors)
+PermissionError: [Errno 13] Permission denied: 'C:\\Windows\\System32\\garmin_export.log'
+Done. 
+Running Garmin export script...
+C:\Users\skriv\Desktop\Garmin-demo\garmindemo.py:135: SyntaxWarning: invalid escape sequence '\R'
+  print(f"\Running Garmin export at {datetime.datetime.now()}")
+\Running Garmin export at 2025-06-18 17:04:01.734735
+953 new activities added at top.
+Traceback (most recent call last):
+  File "C:\Users\skriv\Desktop\Garmin-demo\garmindemo.py", line 155, in <module>
+    plt.figure(figsize=(10, 5))
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\pyplot.py", line 1042, in figure
+    manager = new_figure_manager(
+        num, figsize=figsize, dpi=dpi,
+        facecolor=facecolor, edgecolor=edgecolor, frameon=frameon,
+        FigureClass=FigureClass, **kwargs)
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\pyplot.py", line 552, in new_figure_manager
+    return _get_backend_mod().new_figure_manager(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backend_bases.py", line 3502, in new_figure_manager
+    return cls.new_figure_manager_given_figure(num, fig)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backend_bases.py", line 3507, in new_figure_manager_given_figure
+    return cls.FigureCanvas.new_manager(figure, num)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backend_bases.py", line 1783, in new_manager
+    return cls.manager_class.create_with_canvas(cls, figure, num)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backends\_backend_tk.py", line 507, in create_with_canvas
+    window = tk.Tk(className="matplotlib")
+  File "C:\Users\skriv\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2459, in __init__
+    self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
+              ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: Can't find a usable init.tcl in the following directories: 
+    C:/Users/skriv/AppData/Local/Programs/Python/Python313/lib/tcl8.6 C:/Users/skriv/Desktop/Garmin-demo/.venv/lib/tcl8.6 C:/Users/skriv/Desktop/Garmin-demo/lib/tcl8.6 C:/Users/skriv/Desktop/Garmin-demo/.venv/library C:/Users/skriv/Desktop/Garmin-demo/library C:/Users/skriv/Desktop/Garmin-demo/tcl8.6.14/library C:/Users/skriv/Desktop/tcl8.6.14/library
+
+
+
+This probably means that Tcl wasn't installed properly.
+
+Done. 
+Running Garmin export script...
+C:\Users\skriv\Desktop\Garmin-demo\garmindemo.py:135: SyntaxWarning: invalid escape sequence '\R'
+  print(f"\Running Garmin export at {datetime.datetime.now()}")
+Traceback (most recent call last):
+  File "C:\Users\skriv\Desktop\Garmin-demo\garmindemo.py", line 28, in <module>
+    logging.basicConfig(
+    ~~~~~~~~~~~~~~~~~~~^
+        filename=LOG_FILE,
+        ^^^^^^^^^^^^^^^^^^
+        level=logging.INFO,
+        ^^^^^^^^^^^^^^^^^^^
+        format="%(asctime)s - %(levelname)s - %(message)s"
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\skriv\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 2099, in basicConfig
+    h = FileHandler(filename, mode,
+                    encoding=encoding, errors=errors)
+  File "C:\Users\skriv\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1218, in __init__
+    StreamHandler.__init__(self, self._open())
+                                 ~~~~~~~~~~^^
+  File "C:\Users\skriv\AppData\Local\Programs\Python\Python313\Lib\logging\__init__.py", line 1247, in _open
+    return open_func(self.baseFilename, self.mode,
+                     encoding=self.encoding, errors=self.errors)
+PermissionError: [Errno 13] Permission denied: 'C:\\Windows\\System32\\garmin_export.log'
+Done. 
+Running Garmin export script...
+C:\Users\skriv\Desktop\Garmin-demo\garmindemo.py:135: SyntaxWarning: invalid escape sequence '\R'
+  print(f"\Running Garmin export at {datetime.datetime.now()}")
+\Running Garmin export at 2025-06-18 17:05:23.112039
+953 new activities added at top.
+Traceback (most recent call last):
+  File "C:\Users\skriv\Desktop\Garmin-demo\garmindemo.py", line 155, in <module>
+    plt.figure(figsize=(10, 5))
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\pyplot.py", line 1042, in figure
+    manager = new_figure_manager(
+        num, figsize=figsize, dpi=dpi,
+        facecolor=facecolor, edgecolor=edgecolor, frameon=frameon,
+        FigureClass=FigureClass, **kwargs)
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\pyplot.py", line 552, in new_figure_manager
+    return _get_backend_mod().new_figure_manager(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backend_bases.py", line 3502, in new_figure_manager
+    return cls.new_figure_manager_given_figure(num, fig)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backend_bases.py", line 3507, in new_figure_manager_given_figure
+    return cls.FigureCanvas.new_manager(figure, num)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backend_bases.py", line 1783, in new_manager
+    return cls.manager_class.create_with_canvas(cls, figure, num)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backends\_backend_tk.py", line 507, in create_with_canvas
+    window = tk.Tk(className="matplotlib")
+  File "C:\Users\skriv\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2459, in __init__
+    self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
+              ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: Can't find a usable init.tcl in the following directories: 
+    C:/Users/skriv/AppData/Local/Programs/Python/Python313/lib/tcl8.6 C:/Users/skriv/Desktop/Garmin-demo/.venv/lib/tcl8.6 C:/Users/skriv/Desktop/Garmin-demo/lib/tcl8.6 C:/Users/skriv/Desktop/Garmin-demo/.venv/library C:/Users/skriv/Desktop/Garmin-demo/library C:/Users/skriv/Desktop/Garmin-demo/tcl8.6.14/library C:/Users/skriv/Desktop/tcl8.6.14/library
+
+
+
+This probably means that Tcl wasn't installed properly.
+
+Done. 
+Running Garmin export script...
+C:\Users\skriv\Desktop\Garmin-demo\garmindemo.py:135: SyntaxWarning: invalid escape sequence '\R'
+  print(f"\Running Garmin export at {datetime.datetime.now()}")
+\Running Garmin export at 2025-06-18 17:05:58.966943
+1 new activities added at top.
+Traceback (most recent call last):
+  File "C:\Users\skriv\Desktop\Garmin-demo\garmindemo.py", line 155, in <module>
+    plt.figure(figsize=(10, 5))
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\pyplot.py", line 1042, in figure
+    manager = new_figure_manager(
+        num, figsize=figsize, dpi=dpi,
+        facecolor=facecolor, edgecolor=edgecolor, frameon=frameon,
+        FigureClass=FigureClass, **kwargs)
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\pyplot.py", line 552, in new_figure_manager
+    return _get_backend_mod().new_figure_manager(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backend_bases.py", line 3502, in new_figure_manager
+    return cls.new_figure_manager_given_figure(num, fig)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backend_bases.py", line 3507, in new_figure_manager_given_figure
+    return cls.FigureCanvas.new_manager(figure, num)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backend_bases.py", line 1783, in new_manager
+    return cls.manager_class.create_with_canvas(cls, figure, num)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backends\_backend_tk.py", line 507, in create_with_canvas
+    window = tk.Tk(className="matplotlib")
+  File "C:\Users\skriv\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2459, in __init__
+    self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
+              ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: Can't find a usable init.tcl in the following directories: 
+    C:/Users/skriv/AppData/Local/Programs/Python/Python313/lib/tcl8.6 C:/Users/skriv/Desktop/Garmin-demo/.venv/lib/tcl8.6 C:/Users/skriv/Desktop/Garmin-demo/lib/tcl8.6 C:/Users/skriv/Desktop/Garmin-demo/.venv/library C:/Users/skriv/Desktop/Garmin-demo/library C:/Users/skriv/Desktop/Garmin-demo/tcl8.6.14/library C:/Users/skriv/Desktop/tcl8.6.14/library
+
+
+
+This probably means that Tcl wasn't installed properly.
+
+Done. 
+Running Garmin export script...
+C:\Users\skriv\Desktop\Garmin-demo\garmindemo.py:135: SyntaxWarning: invalid escape sequence '\R'
+  print(f"\Running Garmin export at {datetime.datetime.now()}")
+\Running Garmin export at 2025-06-18 17:11:14.943353
+953 new activities added at top.
+Traceback (most recent call last):
+  File "C:\Users\skriv\Desktop\Garmin-demo\garmindemo.py", line 155, in <module>
+    plt.figure(figsize=(10, 5))
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\pyplot.py", line 1042, in figure
+    manager = new_figure_manager(
+        num, figsize=figsize, dpi=dpi,
+        facecolor=facecolor, edgecolor=edgecolor, frameon=frameon,
+        FigureClass=FigureClass, **kwargs)
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\pyplot.py", line 552, in new_figure_manager
+    return _get_backend_mod().new_figure_manager(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backend_bases.py", line 3502, in new_figure_manager
+    return cls.new_figure_manager_given_figure(num, fig)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backend_bases.py", line 3507, in new_figure_manager_given_figure
+    return cls.FigureCanvas.new_manager(figure, num)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backend_bases.py", line 1783, in new_manager
+    return cls.manager_class.create_with_canvas(cls, figure, num)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backends\_backend_tk.py", line 507, in create_with_canvas
+    window = tk.Tk(className="matplotlib")
+  File "C:\Users\skriv\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2459, in __init__
+    self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
+              ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: Can't find a usable init.tcl in the following directories: 
+    C:/Users/skriv/AppData/Local/Programs/Python/Python313/lib/tcl8.6 C:/Users/skriv/Desktop/Garmin-demo/.venv/lib/tcl8.6 C:/Users/skriv/Desktop/Garmin-demo/lib/tcl8.6 C:/Users/skriv/Desktop/Garmin-demo/.venv/library C:/Users/skriv/Desktop/Garmin-demo/library C:/Users/skriv/Desktop/Garmin-demo/tcl8.6.14/library C:/Users/skriv/Desktop/tcl8.6.14/library
+
+
+
+This probably means that Tcl wasn't installed properly.
+
+Done. 
+Running Garmin export script...
+C:\Users\skriv\Desktop\Garmin-demo\garmindemo.py:135: SyntaxWarning: invalid escape sequence '\R'
+  print(f"\Running Garmin export at {datetime.datetime.now()}")
+\Running Garmin export at 2025-06-18 17:11:56.123935
+No new activities found.
+Traceback (most recent call last):
+  File "C:\Users\skriv\Desktop\Garmin-demo\garmindemo.py", line 155, in <module>
+    plt.figure(figsize=(10, 5))
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\pyplot.py", line 1042, in figure
+    manager = new_figure_manager(
+        num, figsize=figsize, dpi=dpi,
+        facecolor=facecolor, edgecolor=edgecolor, frameon=frameon,
+        FigureClass=FigureClass, **kwargs)
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\pyplot.py", line 552, in new_figure_manager
+    return _get_backend_mod().new_figure_manager(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backend_bases.py", line 3502, in new_figure_manager
+    return cls.new_figure_manager_given_figure(num, fig)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backend_bases.py", line 3507, in new_figure_manager_given_figure
+    return cls.FigureCanvas.new_manager(figure, num)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backend_bases.py", line 1783, in new_manager
+    return cls.manager_class.create_with_canvas(cls, figure, num)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backends\_backend_tk.py", line 507, in create_with_canvas
+    window = tk.Tk(className="matplotlib")
+  File "C:\Users\skriv\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2459, in __init__
+    self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
+              ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: Can't find a usable init.tcl in the following directories: 
+    C:/Users/skriv/AppData/Local/Programs/Python/Python313/lib/tcl8.6 C:/Users/skriv/Desktop/Garmin-demo/.venv/lib/tcl8.6 C:/Users/skriv/Desktop/Garmin-demo/lib/tcl8.6 C:/Users/skriv/Desktop/Garmin-demo/.venv/library C:/Users/skriv/Desktop/Garmin-demo/library C:/Users/skriv/Desktop/Garmin-demo/tcl8.6.14/library C:/Users/skriv/Desktop/tcl8.6.14/library
+
+
+
+This probably means that Tcl wasn't installed properly.
+
+Done. 
+Running Garmin export script...
+C:\Users\skriv\Desktop\Garmin-demo\garmindemo.py:135: SyntaxWarning: invalid escape sequence '\R'
+  print(f"\Running Garmin export at {datetime.datetime.now()}")
+\Running Garmin export at 2025-06-18 17:14:43.547994
+953 new activities added at top.
+Traceback (most recent call last):
+  File "C:\Users\skriv\Desktop\Garmin-demo\garmindemo.py", line 155, in <module>
+    plt.figure(figsize=(10, 5))
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\pyplot.py", line 1042, in figure
+    manager = new_figure_manager(
+        num, figsize=figsize, dpi=dpi,
+        facecolor=facecolor, edgecolor=edgecolor, frameon=frameon,
+        FigureClass=FigureClass, **kwargs)
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\pyplot.py", line 552, in new_figure_manager
+    return _get_backend_mod().new_figure_manager(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backend_bases.py", line 3502, in new_figure_manager
+    return cls.new_figure_manager_given_figure(num, fig)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backend_bases.py", line 3507, in new_figure_manager_given_figure
+    return cls.FigureCanvas.new_manager(figure, num)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backend_bases.py", line 1783, in new_manager
+    return cls.manager_class.create_with_canvas(cls, figure, num)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backends\_backend_tk.py", line 507, in create_with_canvas
+    window = tk.Tk(className="matplotlib")
+  File "C:\Users\skriv\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2459, in __init__
+    self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
+              ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: Can't find a usable init.tcl in the following directories: 
+    C:/Users/skriv/AppData/Local/Programs/Python/Python313/lib/tcl8.6 C:/Users/skriv/Desktop/Garmin-demo/.venv/lib/tcl8.6 C:/Users/skriv/Desktop/Garmin-demo/lib/tcl8.6 C:/Users/skriv/Desktop/Garmin-demo/.venv/library C:/Users/skriv/Desktop/Garmin-demo/library C:/Users/skriv/Desktop/Garmin-demo/tcl8.6.14/library C:/Users/skriv/Desktop/tcl8.6.14/library
+
+
+
+This probably means that Tcl wasn't installed properly.
+
+Done. 
+Running Garmin export script...
+C:\Users\skriv\Desktop\Garmin-demo\garmindemo.py:135: SyntaxWarning: invalid escape sequence '\R'
+  print(f"\Running Garmin export at {datetime.datetime.now()}")
+\Running Garmin export at 2025-06-18 17:15:04.086884
+No new activities found.
+Traceback (most recent call last):
+  File "C:\Users\skriv\Desktop\Garmin-demo\garmindemo.py", line 155, in <module>
+    plt.figure(figsize=(10, 5))
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\pyplot.py", line 1042, in figure
+    manager = new_figure_manager(
+        num, figsize=figsize, dpi=dpi,
+        facecolor=facecolor, edgecolor=edgecolor, frameon=frameon,
+        FigureClass=FigureClass, **kwargs)
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\pyplot.py", line 552, in new_figure_manager
+    return _get_backend_mod().new_figure_manager(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backend_bases.py", line 3502, in new_figure_manager
+    return cls.new_figure_manager_given_figure(num, fig)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backend_bases.py", line 3507, in new_figure_manager_given_figure
+    return cls.FigureCanvas.new_manager(figure, num)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backend_bases.py", line 1783, in new_manager
+    return cls.manager_class.create_with_canvas(cls, figure, num)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backends\_backend_tk.py", line 507, in create_with_canvas
+    window = tk.Tk(className="matplotlib")
+  File "C:\Users\skriv\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2459, in __init__
+    self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
+              ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: Can't find a usable init.tcl in the following directories: 
+    C:/Users/skriv/AppData/Local/Programs/Python/Python313/lib/tcl8.6 C:/Users/skriv/Desktop/Garmin-demo/.venv/lib/tcl8.6 C:/Users/skriv/Desktop/Garmin-demo/lib/tcl8.6 C:/Users/skriv/Desktop/Garmin-demo/.venv/library C:/Users/skriv/Desktop/Garmin-demo/library C:/Users/skriv/Desktop/Garmin-demo/tcl8.6.14/library C:/Users/skriv/Desktop/tcl8.6.14/library
+
+
+
+This probably means that Tcl wasn't installed properly.
+
+Done. 
+Running Garmin export script...
+C:\Users\skriv\Desktop\Garmin-demo\garmindemo.py:135: SyntaxWarning: invalid escape sequence '\R'
+  print(f"\Running Garmin export at {datetime.datetime.now()}")
+\Running Garmin export at 2025-06-18 17:16:43.225366
+953 new activities added at top.
+Traceback (most recent call last):
+  File "C:\Users\skriv\Desktop\Garmin-demo\garmindemo.py", line 155, in <module>
+    plt.figure(figsize=(10, 5))
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\pyplot.py", line 1042, in figure
+    manager = new_figure_manager(
+        num, figsize=figsize, dpi=dpi,
+        facecolor=facecolor, edgecolor=edgecolor, frameon=frameon,
+        FigureClass=FigureClass, **kwargs)
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\pyplot.py", line 552, in new_figure_manager
+    return _get_backend_mod().new_figure_manager(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backend_bases.py", line 3502, in new_figure_manager
+    return cls.new_figure_manager_given_figure(num, fig)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backend_bases.py", line 3507, in new_figure_manager_given_figure
+    return cls.FigureCanvas.new_manager(figure, num)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backend_bases.py", line 1783, in new_manager
+    return cls.manager_class.create_with_canvas(cls, figure, num)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backends\_backend_tk.py", line 507, in create_with_canvas
+    window = tk.Tk(className="matplotlib")
+  File "C:\Users\skriv\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2459, in __init__
+    self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
+              ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: Can't find a usable init.tcl in the following directories: 
+    C:/Users/skriv/AppData/Local/Programs/Python/Python313/lib/tcl8.6 C:/Users/skriv/Desktop/Garmin-demo/.venv/lib/tcl8.6 C:/Users/skriv/Desktop/Garmin-demo/lib/tcl8.6 C:/Users/skriv/Desktop/Garmin-demo/.venv/library C:/Users/skriv/Desktop/Garmin-demo/library C:/Users/skriv/Desktop/Garmin-demo/tcl8.6.14/library C:/Users/skriv/Desktop/tcl8.6.14/library
+
+
+
+This probably means that Tcl wasn't installed properly.
+
+Done. 
+Running Garmin export script...
+C:\Users\skriv\Desktop\Garmin-demo\garmindemo.py:135: SyntaxWarning: invalid escape sequence '\R'
+  print(f"\Running Garmin export at {datetime.datetime.now()}")
+\Running Garmin export at 2025-06-18 17:19:13.706320
+953 new activities added at top.
+Traceback (most recent call last):
+  File "C:\Users\skriv\Desktop\Garmin-demo\garmindemo.py", line 155, in <module>
+    plt.figure(figsize=(10, 5))
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\pyplot.py", line 1042, in figure
+    manager = new_figure_manager(
+        num, figsize=figsize, dpi=dpi,
+        facecolor=facecolor, edgecolor=edgecolor, frameon=frameon,
+        FigureClass=FigureClass, **kwargs)
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\pyplot.py", line 552, in new_figure_manager
+    return _get_backend_mod().new_figure_manager(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backend_bases.py", line 3502, in new_figure_manager
+    return cls.new_figure_manager_given_figure(num, fig)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backend_bases.py", line 3507, in new_figure_manager_given_figure
+    return cls.FigureCanvas.new_manager(figure, num)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backend_bases.py", line 1783, in new_manager
+    return cls.manager_class.create_with_canvas(cls, figure, num)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backends\_backend_tk.py", line 507, in create_with_canvas
+    window = tk.Tk(className="matplotlib")
+  File "C:\Users\skriv\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2459, in __init__
+    self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
+              ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: Can't find a usable init.tcl in the following directories: 
+    C:/Users/skriv/AppData/Local/Programs/Python/Python313/lib/tcl8.6 C:/Users/skriv/Desktop/Garmin-demo/.venv/lib/tcl8.6 C:/Users/skriv/Desktop/Garmin-demo/lib/tcl8.6 C:/Users/skriv/Desktop/Garmin-demo/.venv/library C:/Users/skriv/Desktop/Garmin-demo/library C:/Users/skriv/Desktop/Garmin-demo/tcl8.6.14/library C:/Users/skriv/Desktop/tcl8.6.14/library
+
+
+
+This probably means that Tcl wasn't installed properly.
+
+Done. 
+Running Garmin export script...
+C:\Users\skriv\Desktop\Garmin-demo\garmindemo.py:135: SyntaxWarning: invalid escape sequence '\R'
+  print(f"\Running Garmin export at {datetime.datetime.now()}")
+\Running Garmin export at 2025-06-18 17:19:46.305174
+953 new activities added at top.
+Traceback (most recent call last):
+  File "C:\Users\skriv\Desktop\Garmin-demo\garmindemo.py", line 155, in <module>
+    plt.figure(figsize=(10, 5))
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\pyplot.py", line 1042, in figure
+    manager = new_figure_manager(
+        num, figsize=figsize, dpi=dpi,
+        facecolor=facecolor, edgecolor=edgecolor, frameon=frameon,
+        FigureClass=FigureClass, **kwargs)
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\pyplot.py", line 552, in new_figure_manager
+    return _get_backend_mod().new_figure_manager(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backend_bases.py", line 3502, in new_figure_manager
+    return cls.new_figure_manager_given_figure(num, fig)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backend_bases.py", line 3507, in new_figure_manager_given_figure
+    return cls.FigureCanvas.new_manager(figure, num)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backend_bases.py", line 1783, in new_manager
+    return cls.manager_class.create_with_canvas(cls, figure, num)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backends\_backend_tk.py", line 507, in create_with_canvas
+    window = tk.Tk(className="matplotlib")
+  File "C:\Users\skriv\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2459, in __init__
+    self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
+              ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: Can't find a usable init.tcl in the following directories: 
+    C:/Users/skriv/AppData/Local/Programs/Python/Python313/lib/tcl8.6 C:/Users/skriv/Desktop/Garmin-demo/.venv/lib/tcl8.6 C:/Users/skriv/Desktop/Garmin-demo/lib/tcl8.6 C:/Users/skriv/Desktop/Garmin-demo/.venv/library C:/Users/skriv/Desktop/Garmin-demo/library C:/Users/skriv/Desktop/Garmin-demo/tcl8.6.14/library C:/Users/skriv/Desktop/tcl8.6.14/library
+
+
+
+This probably means that Tcl wasn't installed properly.
+
+Done. 
+Running Garmin export script...
+C:\Users\skriv\Desktop\Garmin-demo\garmindemo.py:135: SyntaxWarning: invalid escape sequence '\R'
+  print(f"\Running Garmin export at {datetime.datetime.now()}")
+\Running Garmin export at 2025-06-18 17:22:03.802251
+1 new activities added at top.
+Traceback (most recent call last):
+  File "C:\Users\skriv\Desktop\Garmin-demo\garmindemo.py", line 155, in <module>
+    plt.figure(figsize=(10, 5))
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\pyplot.py", line 1042, in figure
+    manager = new_figure_manager(
+        num, figsize=figsize, dpi=dpi,
+        facecolor=facecolor, edgecolor=edgecolor, frameon=frameon,
+        FigureClass=FigureClass, **kwargs)
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\pyplot.py", line 552, in new_figure_manager
+    return _get_backend_mod().new_figure_manager(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backend_bases.py", line 3502, in new_figure_manager
+    return cls.new_figure_manager_given_figure(num, fig)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backend_bases.py", line 3507, in new_figure_manager_given_figure
+    return cls.FigureCanvas.new_manager(figure, num)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backend_bases.py", line 1783, in new_manager
+    return cls.manager_class.create_with_canvas(cls, figure, num)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backends\_backend_tk.py", line 507, in create_with_canvas
+    window = tk.Tk(className="matplotlib")
+  File "C:\Users\skriv\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2459, in __init__
+    self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
+              ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: Can't find a usable init.tcl in the following directories: 
+    C:/Users/skriv/AppData/Local/Programs/Python/Python313/lib/tcl8.6 C:/Users/skriv/Desktop/Garmin-demo/.venv/lib/tcl8.6 C:/Users/skriv/Desktop/Garmin-demo/lib/tcl8.6 C:/Users/skriv/Desktop/Garmin-demo/.venv/library C:/Users/skriv/Desktop/Garmin-demo/library C:/Users/skriv/Desktop/Garmin-demo/tcl8.6.14/library C:/Users/skriv/Desktop/tcl8.6.14/library
+
+
+
+This probably means that Tcl wasn't installed properly.
+
+Done. 
+Running Garmin export script...
+C:\Users\skriv\Desktop\Garmin-demo\garmindemo.py:135: SyntaxWarning: invalid escape sequence '\R'
+  print(f"\Running Garmin export at {datetime.datetime.now()}")
+\Running Garmin export at 2025-06-18 17:30:27.466132
+No new activities found.
+Traceback (most recent call last):
+  File "C:\Users\skriv\Desktop\Garmin-demo\garmindemo.py", line 155, in <module>
+    plt.figure(figsize=(10, 5))
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\pyplot.py", line 1042, in figure
+    manager = new_figure_manager(
+        num, figsize=figsize, dpi=dpi,
+        facecolor=facecolor, edgecolor=edgecolor, frameon=frameon,
+        FigureClass=FigureClass, **kwargs)
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\pyplot.py", line 552, in new_figure_manager
+    return _get_backend_mod().new_figure_manager(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backend_bases.py", line 3502, in new_figure_manager
+    return cls.new_figure_manager_given_figure(num, fig)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backend_bases.py", line 3507, in new_figure_manager_given_figure
+    return cls.FigureCanvas.new_manager(figure, num)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backend_bases.py", line 1783, in new_manager
+    return cls.manager_class.create_with_canvas(cls, figure, num)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backends\_backend_tk.py", line 507, in create_with_canvas
+    window = tk.Tk(className="matplotlib")
+  File "C:\Users\skriv\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2459, in __init__
+    self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
+              ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: Can't find a usable init.tcl in the following directories: 
+    C:/Users/skriv/AppData/Local/Programs/Python/Python313/lib/tcl8.6 C:/Users/skriv/Desktop/Garmin-demo/.venv/lib/tcl8.6 C:/Users/skriv/Desktop/Garmin-demo/lib/tcl8.6 C:/Users/skriv/Desktop/Garmin-demo/.venv/library C:/Users/skriv/Desktop/Garmin-demo/library C:/Users/skriv/Desktop/Garmin-demo/tcl8.6.14/library C:/Users/skriv/Desktop/tcl8.6.14/library
+
+
+
+This probably means that Tcl wasn't installed properly.
+
+Done. 
+Running Garmin export script...
+C:\Users\skriv\Desktop\Garmin-demo\garmindemo.py:135: SyntaxWarning: invalid escape sequence '\R'
+  print(f"\Running Garmin export at {datetime.datetime.now()}")
+\Running Garmin export at 2025-06-18 17:35:43.894480
+1 new activities added at top.
+Traceback (most recent call last):
+  File "C:\Users\skriv\Desktop\Garmin-demo\garmindemo.py", line 155, in <module>
+    plt.figure(figsize=(10, 5))
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\pyplot.py", line 1042, in figure
+    manager = new_figure_manager(
+        num, figsize=figsize, dpi=dpi,
+        facecolor=facecolor, edgecolor=edgecolor, frameon=frameon,
+        FigureClass=FigureClass, **kwargs)
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\pyplot.py", line 552, in new_figure_manager
+    return _get_backend_mod().new_figure_manager(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backend_bases.py", line 3502, in new_figure_manager
+    return cls.new_figure_manager_given_figure(num, fig)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backend_bases.py", line 3507, in new_figure_manager_given_figure
+    return cls.FigureCanvas.new_manager(figure, num)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backend_bases.py", line 1783, in new_manager
+    return cls.manager_class.create_with_canvas(cls, figure, num)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\skriv\Desktop\Garmin-demo\.venv\Lib\site-packages\matplotlib\backends\_backend_tk.py", line 507, in create_with_canvas
+    window = tk.Tk(className="matplotlib")
+  File "C:\Users\skriv\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2459, in __init__
+    self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
+              ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: Can't find a usable init.tcl in the following directories: 
+    C:/Users/skriv/AppData/Local/Programs/Python/Python313/lib/tcl8.6 C:/Users/skriv/Desktop/Garmin-demo/.venv/lib/tcl8.6 C:/Users/skriv/Desktop/Garmin-demo/lib/tcl8.6 C:/Users/skriv/Desktop/Garmin-demo/.venv/library C:/Users/skriv/Desktop/Garmin-demo/library C:/Users/skriv/Desktop/Garmin-demo/tcl8.6.14/library C:/Users/skriv/Desktop/tcl8.6.14/library
+
+
+
+This probably means that Tcl wasn't installed properly.
+
+Done. 
