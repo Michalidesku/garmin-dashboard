@@ -1,1 +1,1 @@
-web: gunicorn garmindemo:app
+web: gunicorn garmin_dashboard2:app
